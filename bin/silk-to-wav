@@ -1,0 +1,8 @@
+#!/bin/bash
+FILE_PATH=/home/homolo/tmp
+SILK_DIR=/home/homolo/silk-v3-decoder
+cd $SILK_DIR
+sh converter.sh $FILE_PATH/$1.silk mp3
+ffmpeg -i $FILE_PATH/$1.mp3 -acodec pcm_s16le -ac 1 -ar 16000 $FILE_PATH/$1.wav
+rm -rf $FILE_PATH/$1.silk
+rm -rf $FILE_PATH/$1.mp3

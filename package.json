@@ -1,0 +1,13 @@
+{
+  "name": "partner-robot-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.15.2",
+    "formidable": "^1.1.1",
+    "log4js":"^0.6.6"
+  }
+}
