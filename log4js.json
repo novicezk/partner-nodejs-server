@@ -8,7 +8,7 @@
     {
       "category":"log",
       "type": "file",
-      "filename": "./public/log.txt",
+      "filename": "./public/server.log",
       "maxLogSize": 104800000,
       "backups": 100
     }
